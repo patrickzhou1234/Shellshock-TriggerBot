@@ -9,12 +9,6 @@ Loop, {
         break
     }
     PixelGetColor, color, 970, 570
-    idx0:=SubStr(color, 3, 1)
-    idx1:=SubStr(color, 4, 1)
-    idx2:=SubStr(color, 5, 1)
-    idx3:=SubStr(color, 6, 1)
-    idx4:=SubStr(color, 7, 1)
-    idx5:=SubStr(color, 8, 1)
     if (color="0xFFFFFF") {
         Send {LButton down}100{LButton up}
     }
